@@ -1,18 +1,19 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//Prompts user with password criteria
-do {
-  var passwordLength = prompt("Please pick a password length between 8 and 128 characters long.");
-}
-while (passwordLength < 8 || passwordLength > 128);
-var lowercase = confirm("Would you like to include lowercase letters?");
-var uppercase = confirm("Would you like to include uppercase letters?");
-var numbers = confirm("Would you like to include numbers?");
-var specialChars = confirm("Would you like to include special characters?");
-
 // Write password to the #password input
 function writePassword() {
+  
+  //Prompts user with password criteria
+  do {
+    var passwordLength = prompt("Please pick a password length between 8 and 128 characters long.");
+  }
+  while (passwordLength < 8 || passwordLength > 128);
+  var lowercase = confirm("Would you like to include lowercase letters?");
+  var uppercase = confirm("Would you like to include uppercase letters?");
+  var numbers = confirm("Would you like to include numbers?");
+  var specialChars = confirm("Would you like to include special characters?");
+  
   var criteria = [];
   var lowercaseArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var uppercaseArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
