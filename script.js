@@ -8,8 +8,9 @@ function writePassword() {
   
   //Do while loop is used to ensure that a password is inputted into the prompt text between the set boundaries.
   do {
-    var passwordLength = prompt("Please pick a password length between 8 and 128 characters long.");
-    if (passwordLength === null) {
+    var passwordLength = parseInt(prompt("Please pick a password length between 8 and 128 characters long."));
+    if (passwordLength === null || Number.isInteger(passwordLength) === false || passwordLength < 8 || passwordLength > 128) {
+      alert("Please only input a whole number that is between 8 and 128.");
       return;
     }
   }
@@ -36,22 +37,22 @@ function writePassword() {
 
   //Pushes our various criteria specific arrays to our blank criteria array if user confirms they want them included.
   if (lowercase) {
-    Array.prototype.push.apply(criteria, lowercaseArray); //Could have made this criteria.push but this is functional.
+    criteria.push(...lowercaseArray); 
     passwordString += criteria[Math.floor(Math.random() * lowercaseArray.length)];
     count++;
   }
   if (uppercase) {
-    Array.prototype.push.apply(criteria, uppercaseArray);
+    criteria.push(...uppercaseArray);
     passwordString += criteria[Math.floor(Math.random() * uppercaseArray.length)];
     count++;
   }
   if (numbers) {
-    Array.prototype.push.apply(criteria, numbersArray);
+    criteria.push(...numbersArray);
     passwordString += criteria[Math.floor(Math.random() * numbersArray.length)];
     count++;
   }
   if (specialChars) {
-    Array.prototype.push.apply(criteria, specialCharsArray);
+    criteria.push(...specialCharsArray);
     passwordString += criteria[Math.floor(Math.random() * specialCharsArray.length)];
     count++;
   }
