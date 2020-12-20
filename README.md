@@ -5,18 +5,18 @@ View project here: https://koltondecker.github.io/Password-Generator/
 This project uses a simple user interface webpage that generates a password to the text box when the 'Generate Password' button is clicked. A series of prompts pop up to ask user for input on what criteria should be included in the generated password. 
 
 If the user doesn't a number within the range of 8 - 128 characters or doesn't input a number at all, an alert will pop up that notifies the user that the input doesn't work and then the application ends. 
-![Input that isn't a number](assets/images/Not-A-Number.png)
-![Error-Message](assets/images/Error-Message.png)
+![Input that isn't a number](Assets/Images/Not-A-Number.png)
+![Error-Message](Assets/Images/Error-Message.png)
 
 When a user inputs an acceptable number within the range, a series of 4 prompts will follow that ask the user if they would like to include different criteria in the password to be generated. 
-![Input that is a number within the acceptable range](assets/images/Number-Within-Range.png)
-![Prompt to ask user if the password should contain lowercase letters](assets/images/lowercase-prompt.png)
-![Prompt to ask user if the password should contain uppercase letters](assets/images/uppercase-prompt.png)
-![Prompt to ask user if the password should contain numbers](assets/images/numbers-prompt.png)
-![Prompt to ask user if the password should contain special characters](assets/images/special-chars-prompt.png)
+![Input that is a number within the acceptable range](Assets/Images/Number-Within-Range.png)
+![Prompt to ask user if the password should contain lowercase letters](Assets/Images/lowercase-prompt.png)
+![Prompt to ask user if the password should contain uppercase letters](Assets/Images/uppercase-prompt.png)
+![Prompt to ask user if the password should contain numbers](Assets/Images/numbers-prompt.png)
+![Prompt to ask user if the password should contain special characters](Assets/Images/special-chars-prompt.png)
 
 Here is a randomly generated password based on all criteria being chosen. 
-![Randomly generated password with all criteria included](assets/images/generated-password.png)
+![Randomly generated password with all criteria included](Assets/Images/generated-password.png)
 
 ## User Story
 
@@ -50,7 +50,7 @@ WHEN the password is generated
 
 The following image shows the web application's appearance and functionality:
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+![password generator demo](Assets/Images/03-javascript-homework-demo.png)
 
 ## Grading Requirements
 
