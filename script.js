@@ -20,7 +20,7 @@ function writePassword() {
   var numbers = confirm("Would you like to include numbers?");
   var specialChars = confirm("Would you like to include special characters?");
   
-  //If cancel is selected for all criteria, then the alert below is displayed and the password generation is ended. 
+  //If cancel is selected for all , then the alert below is displayed and the password generation is ended. 
   if (lowercase === false && uppercase === false && numbers === false && specialChars === false) {
     alert("Must select at least one criteria option!");
     return;
@@ -38,7 +38,7 @@ function writePassword() {
   //Pushes our various criteria specific arrays to our blank criteria array if user confirms they want them included.
   if (lowercase) {
     criteria.push(...lowercaseArray); 
-    passwordString += criteria[Math.floor(Math.random() * lowercaseArray.length)];
+    passwordString += criteria[Math.floor(Math.random() * lowercaseArray.length)]; //Pushes random character from this criteria to the overall criteria array to ensure a character makes it into the password in the end regardless of random chance.
     count++;
   }
   if (uppercase) {
